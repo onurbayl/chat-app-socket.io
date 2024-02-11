@@ -51,7 +51,7 @@ socket.on('message', (data) => {
     if(name !== 'Admin'){
         li.innerHTML = `<div class="post__header ${name === nameInput.value ? 'post__header--user' : 'post__header--reply'}">
         <span class="post__header--name">${name}</span>
-        <span class="post__header--time">${name}</span>
+        <span class="post__header--time">${time}</span>
         </div>
         <div class="post__text">${text}</div>
         `
